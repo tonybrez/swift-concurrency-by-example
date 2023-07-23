@@ -8,19 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = ContentViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                TextField("Website address", text: $viewModel.site)
+                    .textFieldStyle(.roundedBorder)
+                Button("Go") {
+                    /// You can use Task to trigger an async call from a synchronous function
+                    Task {
+                        await viewModel.fetchSource()
+                    }
+                }
+            }
+            .padding()
+            
+            .task {
+                /// .task can also trigger an async task. It will run away from main thread. Note that @State pro
+            }
+
+            ScrollView {
+                Text(viewModel.sourceCode)
+            }
         }
-        .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+/// You can also execute async from simple command-line programs using the @main attribute.
+/*
+ func processWeather() async {
+     // Do async work here
+ }
+
+ @main
+ struct MainApp {
+     static func main() async {
+         await processWeather()
+     }
+ }
+ */

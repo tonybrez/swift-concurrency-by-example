@@ -14,6 +14,9 @@
 		E4F0D6F22A6DB5FB0018FB4E /* swift_concurrency_by_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F0D6F12A6DB5FB0018FB4E /* swift_concurrency_by_exampleTests.swift */; };
 		E4F0D6FC2A6DB5FB0018FB4E /* swift_concurrency_by_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F0D6FB2A6DB5FB0018FB4E /* swift_concurrency_by_exampleUITests.swift */; };
 		E4F0D6FE2A6DB5FB0018FB4E /* swift_concurrency_by_exampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F0D6FD2A6DB5FB0018FB4E /* swift_concurrency_by_exampleUITestsLaunchTests.swift */; };
+		E4F0D70C2A6DBFCE0018FB4E /* Chapter1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F0D70B2A6DBFCE0018FB4E /* Chapter1.swift */; };
+		E4F0D7102A6DC38A0018FB4E /* Chapter2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F0D70F2A6DC38A0018FB4E /* Chapter2.swift */; };
+		E4F0D7122A6DC6320018FB4E /* ContentVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F0D7112A6DC6320018FB4E /* ContentVIewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		E4F0D6F72A6DB5FB0018FB4E /* swift-concurrency-by-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-concurrency-by-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F0D6FB2A6DB5FB0018FB4E /* swift_concurrency_by_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_concurrency_by_exampleUITests.swift; sourceTree = "<group>"; };
 		E4F0D6FD2A6DB5FB0018FB4E /* swift_concurrency_by_exampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_concurrency_by_exampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4F0D70B2A6DBFCE0018FB4E /* Chapter1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1.swift; sourceTree = "<group>"; };
+		E4F0D70F2A6DC38A0018FB4E /* Chapter2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2.swift; sourceTree = "<group>"; };
+		E4F0D7112A6DC6320018FB4E /* ContentVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentVIewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +102,10 @@
 			children = (
 				E4F0D6E02A6DB5FA0018FB4E /* swift_concurrency_by_exampleApp.swift */,
 				E4F0D6E22A6DB5FA0018FB4E /* ContentView.swift */,
+				E4F0D7112A6DC6320018FB4E /* ContentVIewModel.swift */,
 				E4F0D6E42A6DB5FB0018FB4E /* Assets.xcassets */,
 				E4F0D6E62A6DB5FB0018FB4E /* Preview Content */,
+				E4F0D70A2A6DB8C20018FB4E /* Chapters */,
 			);
 			path = "swift-concurrency-by-example";
 			sourceTree = "<group>";
@@ -125,6 +133,31 @@
 				E4F0D6FD2A6DB5FB0018FB4E /* swift_concurrency_by_exampleUITestsLaunchTests.swift */,
 			);
 			path = "swift-concurrency-by-exampleUITests";
+			sourceTree = "<group>";
+		};
+		E4F0D70A2A6DB8C20018FB4E /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0D70E2A6DC37D0018FB4E /* Chapter2 */,
+				E4F0D70D2A6DBFD80018FB4E /* Chapter1 */,
+			);
+			path = Chapters;
+			sourceTree = "<group>";
+		};
+		E4F0D70D2A6DBFD80018FB4E /* Chapter1 */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0D70B2A6DBFCE0018FB4E /* Chapter1.swift */,
+			);
+			path = Chapter1;
+			sourceTree = "<group>";
+		};
+		E4F0D70E2A6DC37D0018FB4E /* Chapter2 */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0D70F2A6DC38A0018FB4E /* Chapter2.swift */,
+			);
+			path = Chapter2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +292,9 @@
 			files = (
 				E4F0D6E32A6DB5FA0018FB4E /* ContentView.swift in Sources */,
 				E4F0D6E12A6DB5FA0018FB4E /* swift_concurrency_by_exampleApp.swift in Sources */,
+				E4F0D7102A6DC38A0018FB4E /* Chapter2.swift in Sources */,
+				E4F0D7122A6DC6320018FB4E /* ContentVIewModel.swift in Sources */,
+				E4F0D70C2A6DBFCE0018FB4E /* Chapter1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
